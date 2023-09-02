@@ -26,12 +26,10 @@ set.wildmenu = true
 set.completeopt = "menuone,noselect"
 
 set.hidden = true
-set.mouse = "a"
+set.mouse = a
 
 set.fillchars = "eob: "
 
-vim.cmd("colorscheme nordfox")
+-- vim.g.vimtex_view_method = "zathura"
 
-vim.g.vimtex_view_method = "zathura"
-
-vim.notify = require("notify")
+-- vim.notify = require("notify")

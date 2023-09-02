@@ -3,6 +3,8 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = " " -- leader key
 
+--> neogit <--
+map("n", "ng", ":Neogit<CR>", {})
 --> diffview <--
 map("n", "<leader>do", ":DiffviewOpen<CR>", {})
 map("n", "<leader>dc", ":DiffviewClose<CR>", {})

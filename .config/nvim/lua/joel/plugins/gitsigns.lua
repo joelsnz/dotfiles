@@ -1,7 +1,5 @@
--- code written colors colorizer --
-
 return {
-  "NvChad/nvim-colorizer.lua",
+  "lewis6991/gitsigns.nvim",
   event = { "BufReadPre", "BufNewFile" },
   config = true,
 }

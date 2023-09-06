@@ -1,4 +1,4 @@
--- Statusline written in lua --
+-- statusline written in lua --
 
 return {
   "nvim-lualine/lualine.nvim",

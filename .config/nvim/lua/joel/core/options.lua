@@ -26,9 +26,11 @@ set.wildmenu = true
 set.completeopt = "menuone,noselect"
 
 set.hidden = true
-set.mouse = a
+set.mouse = "a"
 
 set.fillchars = "eob: "
+
+vim.opt.list = true
 
 -- vim.g.vimtex_view_method = "zathura"
 

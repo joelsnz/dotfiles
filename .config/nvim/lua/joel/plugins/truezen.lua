@@ -1,8 +1,11 @@
--- Distraction-free writing modes --
+-- distraction-free writing modes --
+
 return {
-	"pocco81/true-zen.nvim", 
+	"pocco81/true-zen.nvim",
 	config = function()
-		opts = ({
+    local true_zen = require("true-zen")
+
+		true_zen.setup ({
 			modes = {
 				ataraxis = {
 					padding = {
@@ -15,5 +18,11 @@ return {
 				lualine = true,
 			},
 		})
+
+    -- set keymaps --
+    local keymap = vim.keymap --> for conciseness
+
+    keymap.set("n", "<leader>za", "<cmd>TZAtaraxis<cr>", {})
+    keymap.set("n", "<leader>zm", "<cmd>TZMinimalist<CR>", {})
 	end,
 }

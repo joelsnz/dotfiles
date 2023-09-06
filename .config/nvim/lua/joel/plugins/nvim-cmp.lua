@@ -14,7 +14,7 @@ return {
     local cmp = require("cmp")
     local luasnip = require("luasnip")
 
-    -- loads vscode style snippets from installed plugins
+    -- loads vscode style snippets from installed plugins --
     require("luasnip.loaders.from_vscode").lazy_load()
 
     cmp.setup({

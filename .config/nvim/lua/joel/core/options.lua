@@ -31,7 +31,3 @@ set.mouse = "a"
 set.fillchars = "eob: "
 
 vim.opt.list = true
-
--- vim.g.vimtex_view_method = "zathura"
-
--- vim.notify = require("notify")

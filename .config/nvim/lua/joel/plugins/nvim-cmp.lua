@@ -13,6 +13,7 @@ return {
   config = function()
     local cmp = require("cmp")
     local luasnip = require("luasnip")
+    local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 
     -- loads vscode style snippets from installed plugins --
     require("luasnip.loaders.from_vscode").lazy_load()
@@ -42,6 +43,10 @@ return {
         { name = "buffer" }, --> text within current buffer
         { name = "path" }, --> file system paths
       }),
+      cmp.event:on(
+        'confirm_done',
+        cmp_autopairs.on_confirm_done()
+      )
     })
   end,
 }

@@ -11,3 +11,11 @@ alias dotfiles "git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
 # Prompt
 
 starship init fish | source
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/joel/anaconda3/bin/conda
+    eval /home/joel/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+end
+# <<< conda initialize <<<
+

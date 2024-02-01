@@ -3,7 +3,7 @@
 !.gitignore
 
 # Except for the files and folders we want to track
-!alacritty
+!kitty
 !fish
 !starship.toml
 !htop
@@ -12,12 +12,5 @@
 !vifm
 !ranger
 !qtile
-!spectrwm
-!openbox
 !tint2
-!xmobar
-!dwm
-!dwmblocks
-!xmonad
-!xob
 !bat

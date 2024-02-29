@@ -20,19 +20,26 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[33m\]$(__gi
 
 export LD_LIBRARY_PATH=/usr/lib
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# pyenv-virtualenv
+eval "$(pyenv virtualenv-init -)"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/joel/.config/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/joel/.config/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/joel/.config/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/joel/.config/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/joel/.config/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/joel/.config/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/joel/.config/anaconda3/bin:$PATH"
+        export PATH="/home/joel/.config/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

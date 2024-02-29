@@ -3,3 +3,6 @@ symbol=" "
 
 [python]
 symbol=" " 
+
+[hostname]
+ssh_symbol=" "

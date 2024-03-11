@@ -1,3 +1,14 @@
+# oh-my-fish path
+export ZSH="$HOME/.oh-my-zsh"
+
+plugins=(
+    zsh-autosuggestions
+    zsh-vi-mode
+    zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
 autoload -Uz compinit promptinit
 compinit
 promptinit

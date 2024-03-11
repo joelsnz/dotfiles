@@ -13,3 +13,6 @@ export LD_LIBRARY_PATH=/usr/lib/
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# starship theme
+eval "$(starship init zsh)"

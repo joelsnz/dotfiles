@@ -16,3 +16,6 @@ eval "$(pyenv init -)"
 
 # starship theme
 eval "$(starship init zsh)"
+
+# zoxide
+eval "$(zoxide init zsh)"

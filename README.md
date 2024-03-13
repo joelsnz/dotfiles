@@ -32,3 +32,4 @@ $ stow .
 - dolphin: file explorer
 - starship: customizable shell prompt
 - exa: improved file lister
+- zoxide: smarter cd command

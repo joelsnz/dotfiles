@@ -31,3 +31,4 @@ $ stow .
 - rofi: window switcher and application launcher
 - dolphin: file explorer
 - starship: customizable shell prompt
+- exa: improved file lister

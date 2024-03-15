@@ -74,6 +74,20 @@ git restore tmux
 stow --adopt bat
 git restore bat
 ```
+### nvim
+1. Install neovim with your package manager
+    - To make the system clipboard work with neovim, install wl-clipboard (wayland) or xclip (X11)
+2. Install dependencies with your package manager
+- node
+- npm
+- pyright
+- ripgrep
+- fzf
+3. Stow package
+```
+stow --adopt nvim
+git restore nvim
+```
 ## Tools
 
 - fzf: A command line fuzzy finder

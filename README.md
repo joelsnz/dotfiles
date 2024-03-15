@@ -12,10 +12,37 @@ pacman -S stow
 ```
 ## Installation
 ```
-$ cd $HOME
-$ git clone git@github.com:joelsnz/dotfiles.git
-$ mv dotfiles/ .dotfiles/
-$ stow .
+cd $HOME
+git clone git@github.com:joelsnz/dotfiles.git
+mv dotfiles/ .dotfiles/
+stow .
+```
+## Modules
+### zsh
+1. Install zsh
+```
+sudo pacman -S zsh zsh-completions # or with your package manager
+```
+2. Install starship and Oh My Zsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -sS https://starship.rs/install.sh | sh
+```
+3. Install OMZ plugins
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+```
+4. Install dependencies with your package manager
+- bat: Cat clone with syntax highlighting
+- exa: Improved file lister
+- pyenv: Pyhton version manager
+- zoxide: smarter cd command
+5. Stow package
+```
+stow --adopt zsh
+git restore zsh
 ```
 ## Tools
 

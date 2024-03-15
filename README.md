@@ -44,6 +44,17 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 stow --adopt zsh
 git restore zsh
 ```
+### kitty
+1. Install kitty
+```
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+```
+2. Install JetBrains Mono Nerd Font
+3. Stow package
+```
+stow --adopt kitty
+git restore kitty
+```
 ## Tools
 
 - fzf: A command line fuzzy finder

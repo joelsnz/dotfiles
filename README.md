@@ -55,6 +55,18 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 stow --adopt kitty
 git restore kitty
 ```
+### tmux
+1. Install tmux with your package manager
+2. Install Tmux Plugin Manager
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+3. Install TPM plugins with `prefix + I`
+4. Stow package
+```
+stow --adopt tmux
+git restore tmux
+```
 ## Tools
 
 - fzf: A command line fuzzy finder

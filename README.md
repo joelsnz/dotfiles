@@ -67,6 +67,13 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 stow --adopt tmux
 git restore tmux
 ```
+### bat
+1. Install bat with your package manager
+2. Stow package
+```
+stow --adopt bat
+git restore bat
+```
 ## Tools
 
 - fzf: A command line fuzzy finder

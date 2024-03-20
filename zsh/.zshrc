@@ -15,8 +15,8 @@ promptinit
 
 alias grep='grep --color=auto'
 alias cat='bat --style=plain --paging=never'
-alias ls='exa --group-directories-first'
-alias tree='exa -T'
+alias ls='eza --group-directories-first'
+alias tree='eza -T'
 
 export LD_LIBRARY_PATH=/usr/lib/
 

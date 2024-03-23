@@ -7,7 +7,7 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
+        "hyprland/workspaces",
         "sway/mode",
         "sway/scratchpad",
         "custom/media"
@@ -33,7 +33,7 @@
         "tray"
     ],
     // Modules configuration
-    // "sway/workspaces": {
+    // "hyprland/workspaces": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,

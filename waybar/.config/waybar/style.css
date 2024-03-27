@@ -1,7 +1,27 @@
 * {
     border: none;
-    border-radius: 0;
-    font-family: JetBrains Mono NF;
-    font-size: 13px;
-    min-height: 0;
+    border-radius: 0px;
+    font-family: "JetBrains Mono NF";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 10px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+}
+
+#workspaces {
+    font-family: "Noto Sans CJK JP";
+    font-weight: bold;
+}
+
+#workspaces button {
+    padding: 0 0.5em;
+    color: #bb9af7;
+    margin: 0.25em;
+}
+
+#workspaces button.active {
+    color: #ff757f;
 }

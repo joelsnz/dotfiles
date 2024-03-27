@@ -1,13 +1,13 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["hyprland/window"],
     "hyprland/window": {
         "max-length": 50
     },
-
+    "reload_style_on_change": true,
     "clock": {
         "format": "{:%H:%M} ",
         "format-alt": "{:%A, %B %d, %Y (%R)}",
@@ -31,4 +31,24 @@
             "on-scroll-down": "shift_down",
         }
     },
+    "hyprland/workspaces": {
+        "active-only": false,
+        "format": "{icon}",
+        "all-outputs": true,
+        "format-icons": {
+            /* the icons are kanjis. To see them,
+            "Noto Sans CJK JP" font is set in the CSS. */
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十"
+        },
+        "sort-by": "number"
+    }
 }

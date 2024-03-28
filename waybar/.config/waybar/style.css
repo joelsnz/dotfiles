@@ -1,25 +1,35 @@
+/* colors */
+@define-color fg rgba(192, 202, 245, 0.95);
+@define-color bg rgba(31, 37, 53, 0.95);
+
+/* reset all styles */
 * {
     border: none;
-    border-radius: 0px;
-    font-family: "JetBrains Mono NF";
-    font-weight: bold;
-    font-size: 16px;
-    min-height: 10px;
+    border-radius: 10px;
+    min-height: 0;
+    /* margin: 0.2em 0.3em 0.2em 0.3em; */
 }
 
-window#waybar {
+/* the whole bar */
+#waybar {
+    color: @fg;
     background: rgba(0, 0, 0, 0);
+    font-family: "JetBrains Mono NF";
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #workspaces {
     font-family: "Noto Sans CJK JP";
+    font-size: 20px;
     font-weight: bold;
+    background-color: @bg;
+    margin: 10px;
 }
 
 #workspaces button {
-    padding: 0 0.5em;
+    padding: 5px 10px;
     color: #bb9af7;
-    margin: 0.25em;
 }
 
 #workspaces button.active {

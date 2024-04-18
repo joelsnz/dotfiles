@@ -1,33 +1,36 @@
 local set = vim.opt
 
-set.expandtab = true
-set.smarttab = true
-set.shiftwidth = 4
-set.tabstop = 4
-
-set.hlsearch = true
-set.incsearch = true
-set.ignorecase = true
-set.smartcase = true
-
-set.termguicolors = true
-set.showmode = false
-set.splitbelow = true
-set.splitright = true
-set.wrap = false
-set.breakindent = true
-set.scrolloff = 5
-set.fileencoding = "utf-8"
-set.conceallevel = 2
-
 set.relativenumber = true
+set.number = true
+
+-- tabs & indentation
+set.tabstop = 2 -- 2 spaces for tabs (prettier default)
+set. shiftwidth = 2 -- 2 spaces for indent width
+set.expandtab = true -- expand tab to spaces
+set.autoindent = true -- copy indent from current line when starting new one
+
+set.wrap = false
+
+-- search settings
+set.ignorecase = true -- ignore case when searching
+set.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
+
 set.cursorline = true
-set.wildmenu = true
--- set.completeopt = "menuone, noselect"
 
-set.hidden = true
-set.mouse = "a"
+-- turn on termguicolors for tokyonight colorscheme to work
+set.termguicolors = true
+set.background = "dark" -- colorschemes that can ba light or dark will be made dark
+set.signcolumn = "yes" -- show sign column so that text doesn't shift
 
-set.fillchars = "eob: "
+-- backspace
+set.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
-vim.opt.list = true
+-- clipboard
+set.clipboard:append("unnamedplus") -- use system clipboard as default register
+
+-- split windows
+set.splitright = true -- split vertical window to the right
+set.splitbelow = true -- split horizontal window to the bottom
+
+-- turn off swapfile
+set.swapfile = false

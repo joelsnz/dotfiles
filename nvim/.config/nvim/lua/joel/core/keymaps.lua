@@ -3,10 +3,11 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap --> for conciseness
 
--- general keymaps --
-keymap.set("n", "<leader>wq", ":wq<CR>") --> save and quit
-keymap.set("n", "<leader>qq", ":q!<CR>") --> quit without saving
-keymap.set("n", "<leader>ww", ":w<CR>") --> save
+keymap.set("i", "jk", "<ESC>") --> exit insert mode
+
+-- increment/decrement numbers
+keymap.set("n", "<leader>+", "<C-a>") --> increment
+keymap.set("n", "<leader>-", "<C-x>") --> decrement
 
 -- window management --
 keymap.set("n", "<leader>sv", "<C-w>v") --> split window vertically

@@ -1,13 +1,17 @@
 {
+    /* bar config */
     "layer": "top",
     "position": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio"],
+    "modules-right": ["wireplumber"],
     "hyprland/window": {
         "max-length": 50
     },
     "reload_style_on_change": true,
+
+    /* modules */
+
     "clock": {
         "format": "{:%H:%M}",
         "format-alt": "{:%A, %B %d, %Y (%R)}",
@@ -31,6 +35,7 @@
             "on-scroll-down": "shift_down",
         }
     },
+
     "hyprland/workspaces": {
         "active-only": false,
         "format": "{icon}",

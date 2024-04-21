@@ -1,4 +1,5 @@
+--> better UI interfaces <--
 return {
-  "stevearc/dressing.nvim",
-  event = "VeryLazy"
+	"stevearc/dressing.nvim",
+	event = "VeryLazy",
 }

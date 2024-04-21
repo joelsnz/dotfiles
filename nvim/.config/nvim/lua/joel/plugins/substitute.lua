@@ -1,3 +1,4 @@
+--> quickly replace and exchange text <--
 return {
 	"gbprod/substitute.nvim",
 	event = { "BufReadPre", "BufNewFile" },
@@ -6,8 +7,8 @@ return {
 
 		substitute.setup()
 
-		-- set keymaps
-		local keymap = vim.keymap -- for conciseness
+		--> set keymaps
+		local keymap = vim.keymap --> for conciseness
 
 		keymap.set("n", "s", substitute.operator, { desc = "Substitute with motion" })
 		keymap.set("n", "ss", substitute.line, { desc = "Substitute line" })

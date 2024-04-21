@@ -1,4 +1,4 @@
--- parser generator tool / syntax highlighting --
+--> parser generator tool / syntax highlighting <--
 
 return {
 	"nvim-treesitter/nvim-treesitter",
@@ -20,7 +20,7 @@ return {
 		end
 
 		treesitter.setup({
-			-- configure treesitter modules --
+			--> configure treesitter modules <--
 			highlight = { enable = true }, --> enable highlighting
 			indent = { enable = true }, --> enable indentation
 			autotag = { enable = true },

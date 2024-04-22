@@ -5,6 +5,7 @@ return {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
+		"folke/todo-comments.nvim",
 	},
 	config = function()
 		local telescope = require("telescope")
@@ -14,9 +15,8 @@ return {
 		local trouble = require("trouble")
 		local trouble_telescope = require("trouble.providers.telescope")
 
-		--> or create your custom action
 		local custom_actions = transform_mod({
-			open_trouble_qflist = function(prompt_bufnr)
+			open_trouble_qflist = function()
 				trouble.toggle("quickfix")
 			end,
 		})
@@ -37,7 +37,7 @@ return {
 
 		telescope.load_extension("fzf")
 
-		--> set keymaps
+		--> set keymaps <--
 		local keymap = vim.keymap --> for conciseness
 
 		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })

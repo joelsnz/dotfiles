@@ -1,5 +1,4 @@
 --> parser generator tool / syntax highlighting <--
-
 return {
 	"nvim-treesitter/nvim-treesitter",
 	event = { "BufReadPre", "BufNewFile" },
@@ -12,6 +11,7 @@ return {
 		local treesitter = require("nvim-treesitter.configs")
 		local ts_install = require("nvim-treesitter.install")
 
+		--> ensure compatibility with windows machines <--
 		if jit.os == "Linux" then
 			ts_install.prefer_git = true
 		else
@@ -23,8 +23,9 @@ return {
 			--> configure treesitter modules <--
 			highlight = { enable = true }, --> enable highlighting
 			indent = { enable = true }, --> enable indentation
-			autotag = { enable = true },
 			ensure_installed = { --> ensure these parsers are installed
+				"bash",
+				"vim",
 				"c",
 				"cpp",
 				"python",

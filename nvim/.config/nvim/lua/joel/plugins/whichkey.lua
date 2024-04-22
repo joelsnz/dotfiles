@@ -10,6 +10,8 @@ return {
 
 		whichkey.setup({})
 
-		whichkey.register({})
+		whichkey.register({
+			-- TODO: Write down prefix descriptions
+		})
 	end,
 }

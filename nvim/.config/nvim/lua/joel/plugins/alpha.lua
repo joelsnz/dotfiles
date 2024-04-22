@@ -6,7 +6,7 @@ return {
 		local alpha = require("alpha")
 		local dashboard = require("alpha.themes.dashboard")
 
-		--> Set header <--
+		--> set header <--
 		dashboard.section.header.val = {
 			"                                                     ",
 			"  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
@@ -18,7 +18,7 @@ return {
 			"                                                     ",
 		}
 
-		--> Set menu <--
+		--> set menu <--
 		dashboard.section.buttons.val = {
 			dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
 			dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
@@ -28,10 +28,10 @@ return {
 			dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
 		}
 
-		--> Send config to alpha <--
+		--> send config to alpha <--
 		alpha.setup(dashboard.opts)
 
-		--> Disable folding on alpha buffer <--
+		--> disable folding on alpha buffer <--
 		vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
 	end,
 }

@@ -1,4 +1,5 @@
 --> Inline Debug Text <--
+-- TODO: Check
 return {
 	"theHamsta/nvim-dap-virtual-text",
 	lazy = true,

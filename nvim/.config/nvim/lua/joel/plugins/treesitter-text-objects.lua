@@ -1,4 +1,5 @@
 --> syntax aware text-objects, select, move, swap, and peek support <--
+-- TODO: Learn WTF this plugin does
 return {
 	"nvim-treesitter/nvim-treesitter-textobjects",
 	lazy = true,

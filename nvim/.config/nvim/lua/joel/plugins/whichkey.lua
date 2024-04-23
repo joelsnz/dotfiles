@@ -12,6 +12,15 @@ return {
 
 		whichkey.register({
 			-- TODO: Write down prefix descriptions
-		})
+			s = { name = "Splits" },
+			t = { name = "Tabs" },
+			r = { name = "LSP" },
+			c = { name = "Code Actions" },
+			w = { name = "Sessions" },
+			m = { name = "Format" },
+			e = { name = "Explorer" },
+			f = { name = "Find" },
+			n = { name = "Clear" },
+		}, { prefix = "<leader>" })
 	end,
 }

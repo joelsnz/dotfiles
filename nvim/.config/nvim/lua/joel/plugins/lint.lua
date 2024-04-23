@@ -1,7 +1,7 @@
 --> general purpose linters <--
 return {
 	"mfussenegger/nvim-lint",
-	event = "BufWritePost",
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		--> define a table of linters for each filetype (not extension) <--
 		local lint = require("lint")

@@ -11,17 +11,17 @@ return {
 		whichkey.setup({})
 
 		whichkey.register({
-			-- TODO: Write down prefix descriptions
 			s = { name = "Splits" },
 			t = { name = "Tabs" },
 			r = { name = "Redo" },
+			e = { name = "Explorer" },
 			c = { name = "Actions" },
 			w = { name = "Sessions" },
 			m = { name = "Format" },
-			e = { name = "Explorer" },
 			f = { name = "Find" },
 			n = { name = "Clear" },
 			x = { name = "Trouble" },
+			p = { name = "Swap" },
 		}, { prefix = "<leader>" })
 	end,
 }

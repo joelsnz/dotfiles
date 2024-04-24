@@ -14,13 +14,14 @@ return {
 			-- TODO: Write down prefix descriptions
 			s = { name = "Splits" },
 			t = { name = "Tabs" },
-			r = { name = "LSP" },
-			c = { name = "Code Actions" },
+			r = { name = "Redo" },
+			c = { name = "Actions" },
 			w = { name = "Sessions" },
 			m = { name = "Format" },
 			e = { name = "Explorer" },
 			f = { name = "Find" },
 			n = { name = "Clear" },
+			x = { name = "Trouble" },
 		}, { prefix = "<leader>" })
 	end,
 }

@@ -53,5 +53,9 @@ _fzf_compgen_dir() {
     fd --type=d --hidden --exclude .git . "$1"
 }
 
+<<<<<<< HEAD
 export DENO_INSTALL="/home/joel/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+=======
+export TERM=xterm-256color
+>>>>>>> 9d8eda39c36c16c1cf771b93610804887cef3d25

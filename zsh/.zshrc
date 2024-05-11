@@ -57,3 +57,5 @@ export DENO_INSTALL="/home/joel/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 export TERM=xterm-256color
+
+export PATH="$HOME/.local/bin:$PATH"

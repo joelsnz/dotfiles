@@ -10,6 +10,7 @@ return {
 	config = function()
 		local treesitter = require("nvim-treesitter.configs")
 		local ts_install = require("nvim-treesitter.install")
+		local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 
 		--> ensure compatibility with windows machines <--
 		if jit.os == "Linux" then
@@ -18,6 +19,15 @@ return {
 			ts_install.prefer_git = false
 			ts_install.compilers = { "clang" }
 		end
+
+		parser_config.d2 = {
+			install_info = {
+				url = "https://git.pleshevski.ru/pleshevskiy/tree-sitter-d2",
+				revision = "main",
+				files = { "src/parser.c", "src/scanner.cc" },
+			},
+			filetype = "d2",
+		}
 
 		treesitter.setup({
 			--> configure treesitter modules <--

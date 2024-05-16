@@ -1,1 +1,1 @@
-au BufRead, BufNewFile ~/.config/tmux/* set filetype=tmux
+au BufRead,BufNewFile ~/.config/tmux/* set filetype=tmux

@@ -1,6 +1,6 @@
 # THEME #
 #TODO: Modify theme src files in order to do a deeper config
-set -g @plugin 'janoamaral/tokyo-night-tmux'
+source-file "./tokyo-night-tmux/tokyo-night.tmux"
 
 # style
 set -g @tokyo-night-tmux_window_id_style none

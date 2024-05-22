@@ -29,6 +29,9 @@ elif [[ $date_format == "MDY" ]]; then
 elif [[ $date_format == "DMY" ]]; then
   # Day Month Year date format
   date_string="%d-%m-%Y"
+elif [[ $date_format == "DM" ]]; then
+  # Day Month date format
+  date_string="%d-%m"
 else
   # Default to YMD date format if not specified
   date_string="%Y-%m-%d"

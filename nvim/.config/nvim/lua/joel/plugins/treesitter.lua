@@ -44,6 +44,7 @@ return {
 				"markdown_inline",
 			},
 			auto_install = true, --> auto-install above parsers
+			ignore_install = { "latex" },
 			incremental_selection = {
 				enable = true,
 				keymaps = {

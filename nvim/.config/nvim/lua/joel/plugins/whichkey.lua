@@ -12,6 +12,7 @@ return {
 
 		whichkey.register({
 			s = { name = "Splits" },
+			l = { name = "LaTeX" },
 			t = { name = "Tabs" },
 			r = { name = "Redo" },
 			e = { name = "Explorer" },

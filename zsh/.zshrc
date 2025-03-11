@@ -25,14 +25,11 @@ alias grep='grep --color=auto'
 alias cat='bat --style=plain --paging=never'
 alias ls='eza --group-directories-first'
 alias tree='eza -T'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias lout='loginctl terminate-user $USER'
 
 # LIBRARY PATH #
 export LD_LIBRARY_PATH=/usr/lib/
-
-# PYENV #
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 # STARSHIP #
 eval "$(starship init zsh)"
@@ -67,5 +64,7 @@ _fzf_compgen_dir() {
 export PATH="$HOME/.deno/bin:$PATH" # deno
 export PATH="$HOME/.local/bin:$PATH" # local
 export PATH="$HOME/.cargo/bin:$PATH" # cargo
+export PATH="/usr/bin/vendor_perl:$PATH" # po4a
+export PATH="/opt/clion-2024.2.3/bin:$PATH" # clion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

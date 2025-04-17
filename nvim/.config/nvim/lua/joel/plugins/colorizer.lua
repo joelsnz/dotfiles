@@ -1,4 +1,4 @@
--- color highlighter --
+-- color highlighter
 
 return {
 	"norcalli/nvim-colorizer.lua",

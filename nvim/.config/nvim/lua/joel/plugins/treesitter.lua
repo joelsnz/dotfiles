@@ -1,4 +1,4 @@
---> parser generator tool / syntax highlighting <--
+-- parser generator tool / syntax highlighting
 return {
 	"nvim-treesitter/nvim-treesitter",
 	event = { "BufReadPre", "BufNewFile" },
@@ -12,7 +12,7 @@ return {
 		local ts_install = require("nvim-treesitter.install")
 		local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 
-		--> ensure compatibility with windows machines <--
+		-- ensure compatibility with windows machines
 		if jit.os == "Linux" then
 			ts_install.prefer_git = true
 		else
@@ -20,31 +20,20 @@ return {
 			ts_install.compilers = { "clang" }
 		end
 
-		parser_config.d2 = {
-			install_info = {
-				url = "https://git.pleshevski.ru/pleshevskiy/tree-sitter-d2",
-				revision = "main",
-				files = { "src/parser.c", "src/scanner.cc" },
-			},
-			filetype = "d2",
-		}
-
 		treesitter.setup({
-			--> configure treesitter modules <--
-			highlight = { enable = true }, --> enable highlighting
-			indent = { enable = true }, --> enable indentation
-			ensure_installed = { --> ensure these parsers are installed
+			-- configure treesitter modules
+			highlight = { enable = true }, -- enable highlighting
+			indent = { enable = true }, -- enable indentation
+			ensure_installed = { -- ensure these parsers are installed
 				"bash",
 				"vim",
 				"c",
 				"cpp",
 				"python",
 				"lua",
-				"markdown",
-				"markdown_inline",
 			},
-			auto_install = true, --> auto-install above parsers
-			ignore_install = { "latex" },
+			auto_install = true, -- auto-install above parsers
+			ignore_install = {},
 			incremental_selection = {
 				enable = true,
 				keymaps = {

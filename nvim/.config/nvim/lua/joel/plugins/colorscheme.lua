@@ -1,4 +1,4 @@
---> tokyo night theme <--
+-- tokyo night theme
 return {
 	"folke/tokyonight.nvim",
 	priority = 1000,

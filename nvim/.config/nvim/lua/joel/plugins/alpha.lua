@@ -1,4 +1,4 @@
---> greeter page <--
+-- greeter page
 return {
 	"goolord/alpha-nvim",
 	event = "VimEnter",
@@ -6,7 +6,7 @@ return {
 		local alpha = require("alpha")
 		local dashboard = require("alpha.themes.dashboard")
 
-		--> set header <--
+		-- set header
 		dashboard.section.header.val = {
 			"                                                     ",
 			"  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
@@ -18,7 +18,7 @@ return {
 			"                                                     ",
 		}
 
-		--> set menu <--
+		-- set menu
 		dashboard.section.buttons.val = {
 			dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
 			dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
@@ -28,10 +28,10 @@ return {
 			dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
 		}
 
-		--> send config to alpha <--
+		-- send config to alpha
 		alpha.setup(dashboard.opts)
 
-		--> disable folding on alpha buffer <--
+		-- disable folding on alpha buffer
 		vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
 	end,
 }

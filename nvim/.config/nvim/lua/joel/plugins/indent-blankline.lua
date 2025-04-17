@@ -1,4 +1,4 @@
---> indent guides <--
+-- indent guides
 return {
 	"lukas-reineke/indent-blankline.nvim",
 	event = { "BufReadPre", "BufNewFile" },

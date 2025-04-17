@@ -1,20 +1,20 @@
---> file explorer tree <--
+-- file explorer tree
 return {
 	"nvim-tree/nvim-tree.lua",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	config = function()
 		local nvimtree = require("nvim-tree")
 
-		--> recommended settings <--
+		-- recommended settings
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
 
 		nvimtree.setup({
 			view = {
-				width = 35, --> default width of tree pane
+				width = 35, -- default width of tree pane
 				relativenumber = true,
 			},
-			--> change folder arrow icons <--
+			-- change folder arrow icons
 			renderer = {
 				indent_markers = {
 					enable = true,
@@ -22,13 +22,13 @@ return {
 				icons = {
 					glyphs = {
 						folder = {
-							arrow_closed = "", --> arrow when folder is closed
-							arrow_open = "", --> arrow when folder is open
+							arrow_closed = "", -- arrow when folder is closed
+							arrow_open = "", -- arrow when folder is open
 						},
 					},
 				},
 			},
-			--> disable window_picker for explorer to work well with window splits <--
+			-- disable window_picker for explorer to work well with window splits
 			actions = {
 				open_file = {
 					window_picker = {
@@ -44,8 +44,8 @@ return {
 			},
 		})
 
-		--> set keymaps <--
-		local keymap = vim.keymap --> for conciseness
+		-- set keymaps
+		local keymap = vim.keymap -- for conciseness
 
 		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
 		keymap.set(

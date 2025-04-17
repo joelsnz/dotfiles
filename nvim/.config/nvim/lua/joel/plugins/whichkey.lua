@@ -1,4 +1,4 @@
---> shortcuts menu plugin <--
+-- shortcuts menu plugin
 return {
 	"folke/which-key.nvim",
 	event = "VeryLazy",
@@ -10,19 +10,19 @@ return {
 
 		whichkey.setup({})
 
-		whichkey.register({
-			s = { name = "Splits" },
-			l = { name = "LaTeX" },
-			t = { name = "Tabs" },
-			r = { name = "Redo" },
-			e = { name = "Explorer" },
-			c = { name = "Actions" },
-			w = { name = "Sessions" },
-			m = { name = "Format" },
-			f = { name = "Find" },
-			n = { name = "Clear" },
-			x = { name = "Trouble" },
-			p = { name = "Swap" },
-		}, { prefix = "<leader>" })
+		whichkey.add({
+			{ "<leader>c", group = "Actions" },
+			{ "<leader>e", group = "Explorer" },
+			{ "<leader>f", group = "Find" },
+			{ "<leader>l", group = "LaTeX" },
+			{ "<leader>m", group = "Format" },
+			{ "<leader>n", group = "Clear" },
+			{ "<leader>p", group = "Swap" },
+			{ "<leader>r", group = "Redo" },
+			{ "<leader>s", group = "Splits" },
+			{ "<leader>t", group = "Tabs" },
+			{ "<leader>w", group = "Sessions" },
+			{ "<leader>x", group = "Trouble" },
+		})
 	end,
 }

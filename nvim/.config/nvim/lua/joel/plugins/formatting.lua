@@ -7,9 +7,6 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				json = { "prettier" },
-				yaml = { "prettier" },
-				markdown = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				c = { "clang-format" },
@@ -18,6 +15,11 @@ return {
 				lsp_fallback = true,
 				async = false,
 				timeout_ms = 1000,
+			},
+			formatters = {
+				clang_format = {
+					prepend_args = { "--style=file" }, -- so it reads ~/.clang-format
+				},
 			},
 		})
 

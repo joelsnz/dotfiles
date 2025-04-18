@@ -12,10 +12,6 @@ return {
 				"mypy",
 				"pylint",
 			},
-			c = {
-				"clang-tidy",
-				"cppcheck",
-			},
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

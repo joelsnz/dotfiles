@@ -1,6 +1,10 @@
 call plug#begin('~/.vim/plugged') " vim-plug
 
-Plug 'ctrlpvim/ctrlp.vim' " fuzzy finder
+Plug 'junegunn/fzf' " fuzzy finder
+Plug 'junegunn/fzf.vim'
+
+let $FZF_DEFAULT_COMMAND = 'fd --type f --hidden --exclude .git'
+
 Plug 'dense-analysis/ale' " linter
 
 call plug#end()

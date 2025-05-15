@@ -17,6 +17,3 @@ nnoremap <leader>to :tabnew<CR> " new tab
 nnoremap <leader>tx :tabclose<CR> " close tab
 nnoremap <leader>tn :tabn<CR> " go to next tab
 nnoremap <leader>tp :tabp<CR> " go to prev tab
-
-" ctrlp
-nnoremap <leader>ff :CtrlP<CR> " open fuzzy finder

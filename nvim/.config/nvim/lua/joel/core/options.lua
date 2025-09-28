@@ -14,3 +14,5 @@ set.splitright = true -- split vertical window to the right
 set.splitbelow = true -- split horizontal window to the bottom
 
 set.swapfile = false -- turn off swapfile
+
+vim.g.vimtex_view_method = 'okular'

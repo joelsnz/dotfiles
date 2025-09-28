@@ -1,16 +1,3 @@
-<<<<<<< HEAD
--- file explorer
-return {
-  'stevearc/oil.nvim',
-  ---@module 'oil'
-  ---@type oil.SetupOpts
-  opts = {},
-  -- Optional dependencies
-  dependencies = { { "echasnovski/mini.icons", opts = {} } },
-  -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
-  -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
-  lazy = false,
-=======
 return {
 	"stevearc/oil.nvim",
 	opts = {},
@@ -28,5 +15,4 @@ return {
 			},
 		})
 	end,
->>>>>>> b10851f5104b04220c8ccb8f7c9f2fc2b8da6468
 }

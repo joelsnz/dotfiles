@@ -1,0 +1,32 @@
+scan_timeout = 60
+
+[directory]
+style = "bold blue"
+
+[cmd_duration]
+format = "[$duration]($style) "
+
+[status]
+disabled = false
+format = "[$symbol $status]($style) "
+not_found_symbol = ""
+not_executable_symbol = ""
+sigint_symbol = "ﭦ"
+map_symbol = true
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+
+[package]
+format = "[$symbol$version]($style) "
+symbol = " "
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+symbol=" " 
+
+[lua]
+symbol=" "
+
+[hostname]
+ssh_symbol=" "

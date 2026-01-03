@@ -5,6 +5,7 @@ return {
 
     g.ale_linters = {
       c = {'clangd', 'gcc'},
+      cpp = {'g++'},
       lua = {'lua_language_server'}
     }
   end

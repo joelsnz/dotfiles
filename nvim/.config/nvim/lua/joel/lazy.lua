@@ -13,7 +13,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	spec = { import = "joel.plugins" },
+	spec = {
+    { import = "joel.plugins" },
+    { import = "joel.plugins.lsp" }
+  },
   
   checker = { -- check for plugins updates
 		enabled = true,

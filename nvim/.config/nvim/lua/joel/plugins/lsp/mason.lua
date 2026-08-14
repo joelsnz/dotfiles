@@ -1,14 +1,18 @@
 return {
-  "williamboman/mason-lspconfig.nvim",
+  "mason-org/mason-lspconfig.nvim",
   opts = {
     ensure_installed = {
       "clangd",
-      "lua_ls"
-    }
+      "lua_ls",
+      "ts_ls",
+      "html",
+      "cssls"
+    },
+    automatic_enable = true
   },
   dependencies = {
     {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       opts = {
         ui = {
           icons = {

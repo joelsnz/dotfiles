@@ -1,13 +1,24 @@
--- syntax highlighting
 return {
-  'nvim-treesitter/nvim-treesitter',
+  "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
-  config = function()
-    local ts = require("nvim-treesitter.configs")
-    ts.setup({
-      ensure_installed = {'lua', 'c', 'cmake'},
-      highlight = { enable = true },
-      indent = { enable = true }
+  lazy = false,
+  opts = {
+    "javascript",
+    "html",
+    "css"
+  },
+  config = function(_, opts)
+    require("nvim-treesitter").install(opts)
+
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = {
+        "javascript",
+        "html",
+        "css"
+      },
+      callback = function()
+        vim.treesitter.start()
+      end
     })
   end
 }

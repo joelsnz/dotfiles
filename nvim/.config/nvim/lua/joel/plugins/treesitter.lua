@@ -5,7 +5,8 @@ return {
   opts = {
     "javascript",
     "html",
-    "css"
+    "css",
+    "qmljs"
   },
   config = function(_, opts)
     require("nvim-treesitter").install(opts)
@@ -14,7 +15,8 @@ return {
       pattern = {
         "javascript",
         "html",
-        "css"
+        "css",
+        "qmljs"
       },
       callback = function()
         vim.treesitter.start()

@@ -6,7 +6,8 @@ return {
       "lua_ls",
       "ts_ls",
       "html",
-      "cssls"
+      "cssls",
+      "qmlls"
     },
     automatic_enable = true
   },

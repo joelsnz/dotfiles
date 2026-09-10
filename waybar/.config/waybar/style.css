@@ -59,6 +59,7 @@ button:hover {
 #cpu,
 #memory,
 #disk,
+#battery,
 #temperature,
 #backlight,
 #wireplumber,
@@ -101,6 +102,11 @@ button:hover {
 
 #idle_inhibitor.activated {
     color: @red;
+}
+
+#battery {
+    color: @green;
+    border-bottom: 2px solid @green;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

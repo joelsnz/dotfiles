@@ -7,7 +7,9 @@ return {
       "ts_ls",
       "html",
       "cssls",
-      "qmlls"
+      "qmlls",
+      "pyright",
+      "lemminx"
     },
     automatic_enable = true
   },

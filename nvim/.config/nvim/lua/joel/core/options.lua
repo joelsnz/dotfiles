@@ -16,3 +16,8 @@ set.splitbelow = true -- split horizontal window to the bottom
 set.swapfile = false -- turn off swapfile
 
 vim.g.vimtex_view_method = 'okular'
+
+set.foldmethod = "expr"
+set.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+set.foldenable = true
+set.foldlevel = 99

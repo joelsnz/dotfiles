@@ -78,3 +78,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH="$PATH:/usr/lib/qt6/bin"
+source /opt/ros/lyrical/setup.zsh
+source /etc/profile.d/colcon_cd.sh
+source /etc/profile.d/colcon_cd-argcomplete.zsh
+export _colcon_cd_root=/opt/ros/lyrical/
+export PATH="$HOME/.local/opt/nvim-linux-x86_64/bin:$PATH"

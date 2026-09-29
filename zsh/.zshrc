@@ -32,7 +32,7 @@ promptinit
 
 # ALIAS #
 alias grep='grep --color=auto'
-alias cat='bat --style=plain --paging=never'
+alias cat='batcat --style=plain --paging=never'
 alias ls='eza --group-directories-first'
 alias tree='eza -T'
 alias lout='loginctl terminate-user $USER'
@@ -44,9 +44,6 @@ export LD_LIBRARY_PATH=/usr/lib/
 eval "$(zoxide init zsh)"
 
 # FZF #
-# set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)"
-
 # use fd instead of fzf
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -78,8 +75,24 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH="$PATH:/usr/lib/qt6/bin"
-source /opt/ros/lyrical/setup.zsh
-source /etc/profile.d/colcon_cd.sh
-source /etc/profile.d/colcon_cd-argcomplete.zsh
-export _colcon_cd_root=/opt/ros/lyrical/
+source /opt/ros/jazzy/setup.zsh
+source /usr/share/colcon_cd/function/colcon_cd.sh
+export _colcon_cd_root=/opt/ros/jazzy/
 export PATH="$HOME/.local/opt/nvim-linux-x86_64/bin:$PATH"
+export PATH="$HOME/.local/opt/nvim-linux-x86_64/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/joel/.local/bin:$PATH"
+
+# opencode
+export PATH=/home/joel/.opencode/bin:$PATH
+
+# OpenCV 4.9.0 instalado en el perfil de usuario
+if [[ -r "$HOME/.config/opencv-4.9.0/env.sh" ]]; then
+  source "$HOME/.config/opencv-4.9.0/env.sh"
+fi

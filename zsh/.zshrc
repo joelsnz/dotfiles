@@ -75,6 +75,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH="$PATH:/usr/lib/qt6/bin"
+source ~/turtlebot3_ws/install/setup.zsh
+export ROS_DOMAIN_ID=100 #TURTLEBOT3
 source /opt/ros/jazzy/setup.zsh
 source /usr/share/colcon_cd/function/colcon_cd.sh
 export _colcon_cd_root=/opt/ros/jazzy/
@@ -91,8 +93,3 @@ export PATH="/home/joel/.local/bin:$PATH"
 
 # opencode
 export PATH=/home/joel/.opencode/bin:$PATH
-
-# OpenCV 4.9.0 instalado en el perfil de usuario
-if [[ -r "$HOME/.config/opencv-4.9.0/env.sh" ]]; then
-  source "$HOME/.config/opencv-4.9.0/env.sh"
-fi

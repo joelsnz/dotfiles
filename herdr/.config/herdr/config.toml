@@ -1,0 +1,9 @@
+onboarding = false
+
+[keys]
+prefix = "ctrl+s"
+toggle_sidebar = "prefix+s"
+resize_pane_left = "prefix+H"
+resize_pane_down = "prefix+J"
+resize_pane_up = "prefix+K"
+resize_pane_right = "prefix+L"

@@ -9,7 +9,9 @@ return {
     "qmljs",
     "python",
     "lua",
-    "xml"
+    "xml",
+    "c",
+    "cpp"
   },
   config = function(_, opts)
     require("nvim-treesitter").install(opts)
@@ -22,7 +24,9 @@ return {
         "qmljs",
         "python",
         "lua",
-        "xml"
+        "xml",
+        "c",
+        "cpp"
       },
       callback = function()
         vim.treesitter.start()

@@ -73,7 +73,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH="$PATH:/usr/lib/qt6/bin"
-source ~/turtlebot3_ws/install/setup.zsh
 export ROS_DOMAIN_ID=100 #TURTLEBOT3
 source /opt/ros/jazzy/setup.zsh
 source /usr/share/colcon_cd/function/colcon_cd.sh

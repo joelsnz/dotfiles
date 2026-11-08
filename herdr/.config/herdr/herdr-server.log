@@ -1,0 +1,64 @@
+2026-10-30T12:10:27.964389Z  INFO herdr::api::server: api server listening path=/home/joel/.config/herdr/herdr.sock
+2026-10-30T12:10:27.965497Z  INFO herdr::persist::io: session file is missing event="persist.restore" subsystem="persist" outcome="missing" path=/home/joel/.config/herdr/session.json
+2026-10-30T12:10:27.965565Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-10-30T12:10:28.045778Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-10-30T12:10:28.046412Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=40 cols=119 scrollback_limit_bytes=10000000
+2026-10-30T12:10:28.047661Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=23652
+2026-10-30T12:10:28.047870Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-10-30T12:10:28.047875Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-10-30T12:10:28.047878Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-10-30T12:10:28.047882Z  INFO herdr::server::headless::bootstrap: created startup workspace cwd=/home/joel
+2026-10-30T12:10:28.047940Z  INFO herdr::server::headless: client protocol socket listening path=/home/joel/.config/herdr/herdr-client.sock
+2026-10-30T12:10:28.047978Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/home/joel/.config/herdr/herdr.sock client_socket=/home/joel/.config/herdr/herdr-client.sock
+2026-10-30T12:10:28.048071Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=23630
+2026-10-30T12:10:28.067216Z  INFO herdr::server::headless: client connected client_id=2 cols=206 rows=59 cell_width_px=11 cell_height_px=23 surface_active=true render_encoding=SemanticFrame
+2026-10-30T12:10:33.062839Z  INFO herdr::persist::writer: preserved session recovery copy event="persist.backup" subsystem="persist" outcome="ok" path=/home/joel/.config/herdr/session.json backup_path=/home/joel/.config/herdr/session-snapshots/session-000000000000000000001793362233059353757-23630-0.json
+2026-10-30T12:10:33.062874Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/joel/.config/herdr/session.json workspaces=1
+2026-10-30T12:10:35.448651Z  INFO herdr::server::headless: client detached client_id=2
+2026-10-30T12:31:25.562114Z  INFO herdr::platform::linux::shutdown: host shutdown requested; preserving session before pane termination
+2026-10-30T12:31:25.562432Z  INFO herdr::server::headless::lifecycle: server shutdown initiated reason=host shutdown
+2026-10-30T12:31:25.612514Z  INFO herdr::server::headless::lifecycle: completing server shutdown
+2026-10-30T12:31:25.617224Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/joel/.config/herdr/session.json workspaces=1
+2026-10-30T12:31:25.617243Z  INFO herdr::server::headless: headless server exiting
+2026-10-30T12:31:25.618111Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-10-30T12:31:25.623362Z  INFO herdr::pane: pane session terminated pane=1 pid=23652 signal=Hangup
+2026-10-30T12:31:25.624284Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=23630
+2026-11-01T18:26:03.478301Z  INFO herdr::api::server: api server listening path=/home/joel/.config/herdr/herdr.sock
+2026-11-01T18:26:03.495345Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-11-01T18:26:03.502712Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=14424
+2026-11-01T18:26:03.505725Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-11-01T18:26:03.505740Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-11-01T18:26:03.642937Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T18:26:03.644491Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/home/joel
+2026-11-01T18:26:03.645805Z  INFO herdr::server::headless: client protocol socket listening path=/home/joel/.config/herdr/herdr-client.sock
+2026-11-01T18:26:03.646542Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/home/joel/.config/herdr/herdr.sock client_socket=/home/joel/.config/herdr/herdr-client.sock
+2026-11-01T18:26:03.648740Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=14404
+2026-11-01T18:26:03.719873Z  INFO herdr::server::headless: client connected client_id=2 cols=206 rows=59 cell_width_px=11 cell_height_px=23 surface_active=true render_encoding=SemanticFrame
+2026-11-01T18:26:35.187823Z  INFO herdr::server::headless: client detached client_id=2
+2026-11-01T18:56:03.645119Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T19:26:03.646689Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T19:56:03.647731Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T20:26:03.648914Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T20:56:03.649335Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T21:26:03.651119Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T21:56:03.652051Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T22:26:03.652707Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-01T22:53:32.640202Z  INFO herdr::platform::linux::shutdown: host shutdown requested; preserving session before pane termination
+2026-11-01T22:53:32.640418Z  INFO herdr::server::headless::lifecycle: server shutdown initiated reason=host shutdown
+2026-11-01T22:53:32.690520Z  INFO herdr::server::headless::lifecycle: completing server shutdown
+2026-11-01T22:53:32.695885Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/joel/.config/herdr/session.json workspaces=1
+2026-11-01T22:53:32.695914Z  INFO herdr::server::headless: headless server exiting
+2026-11-01T22:53:32.700913Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=1 status="ExitStatus { code: 1, signal: None }"
+2026-11-01T22:53:32.703231Z  INFO herdr::pane: pane session terminated pane=1 pid=14424 signal=Hangup
+2026-11-01T22:53:32.706125Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="server" outcome="completed" pid=14404
+2026-11-08T20:08:07.972146Z  INFO herdr::api::server: api server listening path=/home/joel/.config/herdr/herdr.sock
+2026-11-08T20:08:07.987709Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-11-08T20:08:07.995047Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=3906
+2026-11-08T20:08:07.997511Z  INFO herdr::logging: session restore evaluated event="persist.restore" subsystem="persist" outcome="ok" workspaces=1
+2026-11-08T20:08:07.997527Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-11-08T20:08:08.137167Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-11-08T20:08:08.138628Z  INFO herdr::server::headless::bootstrap: restored session already has workspaces; ignoring startup cwd cwd=/home/joel
+2026-11-08T20:08:08.139528Z  INFO herdr::server::headless: client protocol socket listening path=/home/joel/.config/herdr/herdr-client.sock
+2026-11-08T20:08:08.140450Z  INFO herdr::server::headless::bootstrap: herdr server started api_socket=/home/joel/.config/herdr/herdr.sock client_socket=/home/joel/.config/herdr/herdr-client.sock
+2026-11-08T20:08:08.142934Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=3881
+2026-11-08T20:08:08.206101Z  INFO herdr::server::headless: client connected client_id=2 cols=206 rows=59 cell_width_px=11 cell_height_px=23 surface_active=true render_encoding=SemanticFrame

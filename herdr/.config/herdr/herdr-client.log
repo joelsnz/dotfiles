@@ -1,0 +1,11 @@
+2026-10-30T12:10:28.063935Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=23629
+2026-10-30T12:10:28.063974Z  INFO herdr::client: connecting to server path=/home/joel/.config/herdr/herdr-client.sock
+2026-10-30T12:10:28.067280Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-30T12:10:35.449926Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=23629
+2026-11-01T18:26:03.673095Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=14403
+2026-11-01T18:26:03.673360Z  INFO herdr::client: connecting to server path=/home/joel/.config/herdr/herdr-client.sock
+2026-11-01T18:26:03.719894Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-01T18:26:35.188734Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=14403
+2026-11-08T20:08:08.164222Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3880
+2026-11-08T20:08:08.164477Z  INFO herdr::client: connecting to server path=/home/joel/.config/herdr/herdr-client.sock
+2026-11-08T20:08:08.206122Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5

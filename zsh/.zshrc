@@ -58,8 +58,6 @@ _fzf_compgen_dir() {
     fd --type=d --hidden --exclude .git . "$1"
 }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # PATH #
 export PATH="$HOME/.deno/bin:$PATH" # deno
 export PATH="$HOME/.local/bin:$PATH" # local
@@ -93,3 +91,5 @@ export PATH="/home/joel/.local/bin:$PATH"
 
 # opencode
 export PATH=/home/joel/.opencode/bin:$PATH
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
